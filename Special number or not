@@ -1,0 +1,75 @@
+PROGRAM 1:
+for i in range(int(input())):
+     a=int(input())
+     b=list(str(a))
+     if(len(b)==2):
+          c,d=int(b[0]),int(b[1])
+          e=c+d
+          f=c*d
+          b=e+f
+          if(b==a):
+               print("Special number")
+          else:
+               print("Not a special number")
+     else:
+          print("Invalid input")
+
+
+
+
+
+PROGRAM 2:
+n=int(input())
+list1=[]
+for i in range(n):
+    a=int(input())
+    list1.append(a)
+for i in list1:
+    temp=i
+    if(i>=10 and i<=99):
+        list2=[]
+        while(i):
+            b=i%10
+            i=i//10
+            list2.append(b)
+        c=list2[0]+list2[1]
+        d=list2[0]*list2[1]
+        d=c+d
+        if(d==temp):
+            print("Special number")
+        else:
+            print("Not a special number")    
+    else:
+        print("Invalid input")
+
+
+
+
+
+'''
+Write a program to check wheather the given number is special number or not.
+What is special number?
+Split the number to digits. Add the digits, multiply the digit, add the output of addition and multiplication and the
+resultant number should be same as the original number.
+
+Example: If the input is 19 ====>>1+9= 10 and 1*9 ====>> 10+9=19 which is equal to the input so the given number
+is a special number.
+
+Number should be a 2 digit number. Otherwise print "Invalid input"
+
+
+
+'''
+TEST CASE 1:
+INPUT:
+3
+19
+11
+5
+
+
+OUTPUT:
+Special number
+Not a special number
+Invalid input
+'''
