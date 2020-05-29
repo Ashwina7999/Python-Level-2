@@ -1,3 +1,13 @@
+PROGRAM 1:
+for i in range(int(input())):
+     a,b=list(map(int,input().split()))
+     list1=[i for i in range(1,a+1)]
+     list1=list1[0::2]
+     print(len(list1)*b)
+
+
+
+PROGRAM 2:
 n=int(input())
 for i in range(n):
     a,b=input().split()
@@ -10,6 +20,11 @@ for i in range(n):
     print(sum(list1))
 
 '''
+Given a street of houses (a row of houses), each house having some amount of money kept inside; now there is a theif 
+who is going to steal this money but he has a constraints/rule that he cannot steal/rob two adjacent houses. Find the maximum 
+money he can rob.
+
+
 TEST CASE 1:
 2
 5 10
