@@ -1,3 +1,16 @@
+PROGRAM 1:
+from collections import Counter
+for i in range(int(input())):
+     a=int(input())
+     b=dict(Counter(input().strip().split()))
+     count=0
+     for i,j in b.items():
+          if(j==2):
+               count+=1
+     print(count)          
+
+
+PROGRAM 2:
 n=int(input())
 for i in range(n):
     a=int(input())
