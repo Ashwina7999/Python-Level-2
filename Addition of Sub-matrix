@@ -1,0 +1,45 @@
+PROGRAM:
+for i in range(int(input())):
+    a=list(map(int,input().strip().split()))
+    b=list(map(int,input().strip().split()))
+    list1=[]
+    for i in range(0,len(b),a[1]):
+        list1.append(b[i:i+a[0]])
+    c=list(map(int,input().strip().split()))
+    sum1=0
+    for row in range(c[0]-1,c[2]):
+        for col in range(c[1]-1,c[3]):
+            sum1+=list1[row][col]
+    print(sum1)
+
+
+
+
+'''
+Given a matrix C of size N x M. You are given position of sub-matrix as X1, Y1 and X2, Y2 inside the matrix.
+Find the sum of all elements inside  that sub-matrix.
+
+INPUT:
+The first line of input contains an integer T denoting the number of test cases. The first line of each testcase is n and m,n
+is the number of rows and m is the number of columns. The second line of each test case contains C[N][M]. The third line contains 
+four value of X1, Y1, X2, Y2. X1, Y1 is the top left cell and X2, Y2 is the bottom right cell.
+
+OUTPUT:
+Print the sum of all elements inside that sub-matrix
+
+
+TEST CASE 1:
+INPUT:
+2
+5 6
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+3 4 4 5
+3 3
+9 8 7 4 2 1 6 5 3
+1 2 3 3
+
+
+OUTPUT:
+78
+26
+'''
