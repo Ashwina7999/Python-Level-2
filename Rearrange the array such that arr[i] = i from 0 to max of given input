@@ -1,0 +1,25 @@
+a=int(input())
+list1=[]
+b=input().split()
+for i in b:
+    c=int(i)
+    list1.append(c)
+for i in range(max(list1)+1):
+    if(i not in list1):
+        print("-1",end=" ")
+    else:
+        print(i,end=" ")
+
+'''
+Given an array of element of length N, ranging from 1 o N, all elements may not be present in the array. If element is not present then 
+there will be -1 present in the array. Rearrange the array such that A[i] = i and if i is not present, display -1 at the place. Index 
+Starts from 0 
+
+
+TEST CASE 1:
+6
+6 1 9 3 2 4
+
+OUTPUT:
+-1 1 2 3 4 -1 6 -1 -1 9 
+'''
