@@ -1,0 +1,53 @@
+PROGRAM 1:
+n=int(input())
+for i in range(n):
+    a=input().strip()
+    list1=[]
+    list2=[]
+    b=a.split()
+    for i in b:
+        list1.append(len(i))
+    a=a[::-1]
+    for i in a:
+        if(i!=" "):
+            list2.append(i)
+    for i in list1:
+        print(''.join(list2[0:i]),end=" ")
+        list2=list2[i:]
+    print()
+
+
+
+PROGRAM 2:
+n=int(input())
+for i in range(n):
+    a=input()
+    b=a[::-1]
+    b=b.split()
+    b=''.join(b)
+    b=list(b)
+    n=0
+    l=list(a)
+    list1=[]
+    for i in range(len(l)):
+        if(l[i].isspace()==True):
+            list1.append(l[i])
+        else:
+            list1.append(b[n])
+            n+=1
+    print(''.join(list1))        
+    
+'''
+Write a program to reverse a string with preserving the position of spaces. For example, if "I Am Not String" is 
+the given string then the reverse of this string with preserving the position os spaces is "g ni rtS toNmAI"
+
+3
+work while you work
+ITVAC ROCKS
+Never believe a stranger
+
+OUTPUT:
+krow uoyel ihw krow
+SKCOR CAVTI
+regna rtsaeve i lebreveN
+'''
