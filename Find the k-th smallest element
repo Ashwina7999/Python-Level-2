@@ -1,0 +1,26 @@
+n=int(input())
+list1=[]
+for i in range(n):
+    a=int(input())
+    list1.append(a)
+b=int(input())
+print(list1[b-1])
+
+
+'''
+find the Kth smallest element in an unsorted array.
+You are given an unsorted array of number and k, you need to find the Kth smallest number in the array.
+
+
+TEST CASE 1:
+5
+1
+5
+7
+8
+88
+2
+
+OUTPUT:
+5
+'''
