@@ -1,0 +1,22 @@
+PROGRAM:
+a=int(input())
+print(*sorted([i*i for i in map(int,input().split())]))
+
+
+
+'''
+Given an unsorted list of integers, square the element and give the output in sorted order
+
+For example, given [-9, -2, 0, 2, 3], return [0, 4, 4, 9, 81]
+
+TEST CASE 1:
+5
+-9
+-2
+0
+2
+3
+
+OUTPUT:
+0 4 4 9 81
+'''
