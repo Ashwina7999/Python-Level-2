@@ -1,0 +1,40 @@
+a=int(input())
+n=a//2
+pat=''
+if(a>5 and a<100):
+    for i in range(0,a):
+        for j in range(0,a):
+            if((j==1 and i!=0) or ((i==0) and j>1 and j<a-1) or ((i==a-1) and j>1 and j<a-2) or ((i==n-1) and j>2 and j>2 and j<a-1) or (j==a-2 and i!=0 and i!=a-1 and i>=((a-1)/2))):
+                pat=pat+'*'
+            else:
+                pat=pat+' '
+        pat=pat+'\n'
+    print(pat)
+else:
+    print("No pattern")
+
+
+
+'''
+TEST CASE 1:
+INPUT:
+7
+
+OUTPUT:
+
+  **** 
+ *     
+ * *** 
+ *   * 
+ *   * 
+ *   * 
+ ****  
+ 
+ 
+ TEST CASE 2:
+ INPUT:
+ 5
+ 
+ OUTPUT:
+ No pattern
+ '''
